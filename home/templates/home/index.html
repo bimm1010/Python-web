@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+{% block content %}
+        <h1>Đây là templates</h1>
+        <p>Xin chào mình tên là {{ name }}</p>
+        <h2>tài sản của tôi là: </h2>
+<ul>
+    {% for item in taisan %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+        <p>trạng thái hôn nhân của mình:</p>
+        <p> <h3>{{ trangthai }}</h3> </p>
+</body>
+</html>
+
+{% endblock %}
+
